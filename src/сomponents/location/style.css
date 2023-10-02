@@ -1,0 +1,40 @@
+.location-desktop {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--textColor);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 1024px) {
+  .location-desktop {
+    display: none;
+  }
+}
+
+.location-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  height: 56px;
+  background-color: var(--grayColor);
+  color: var(--textColor);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 1024px) {
+  .location-mobile {
+    display: none;
+  }
+}
